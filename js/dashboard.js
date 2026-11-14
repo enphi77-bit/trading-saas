@@ -148,7 +148,7 @@ onAuthStateChanged(auth, async (user) => {
     if (!user || !user.emailVerified) {
         window.location.href = "index.html";
         return;
-    
+    }
 
     const snap = await getDoc(doc(db, "users", user.uid));
     const data = snap.exists() ? snap.data() : {};
