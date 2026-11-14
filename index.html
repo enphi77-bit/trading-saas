@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Trading SaaS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="card">
+    <h1>Trading SaaS</h1>
+    <div class="tabs">
+      <button id="tab-login" class="active" type="button">Login</button>
+      <button id="tab-register" type="button">Daftar</button>
+    </div>
+    <form id="auth-form">
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password (min 6 karakter)" minlength="6" required>
+      <button type="submit" id="submit-btn">Login</button>
+    </form>
+    <p id="msg"></p>
+    <button id="resend-btn" type="button" hidden>Kirim ulang email verifikasi</button>
+  </div>
+  <script type="module" src="js/auth.js"></script>
+</body>
+</html>
